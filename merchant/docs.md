@@ -15,7 +15,7 @@
         }
     }
 
-**merchant info**  
+**Merchant Info**  
 
     POST /merchant/merchant-info/
     
@@ -37,6 +37,7 @@
             
         }
     }  
+**Merchant List**  
 
      POST /merchant/merchant-list/
      
@@ -60,6 +61,7 @@
             ],  
         }
     }  
+**Order List**  
     
      POST /merchant/order-list/
      
