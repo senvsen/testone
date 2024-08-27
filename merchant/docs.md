@@ -13,7 +13,7 @@
             "status": "ok"
         }
     }
-    
+
     POST /merchant/merchant-info/
     
 **Returns**
@@ -60,7 +60,7 @@
     
      POST /merchant/order-list/
      
-**Returns**
+**Returns**  
     {  
 
         "error_code": 1,  
