@@ -103,3 +103,24 @@
             "status": "ok"
         }
     }
+
+**Apply Withdrawal**
+  
+    POST /merchant/apply-withdrawal/
+
+**parameters**
+
+  
+• my_address
+• balance_usdt
+• withdrawal_amount
+• description
+
+**Returns**  
+
+    {
+        "error_code": 1,
+        "result": {
+            "status": "ok"
+        }
+    }
