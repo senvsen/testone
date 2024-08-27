@@ -124,3 +124,106 @@
             "status": "ok"
         }
     }
+
+**Withdrawal List**
+  
+    POST /merchant/get-withdrawal-list/
+
+**parameters**
+
+Nothing
+
+**Returns**  
+
+    {
+        "error_code": 1,
+        "result": {
+            "withdrawallist": [
+                {
+                    "id": 1,
+                    "created_at": 1724723818,
+                    "items": 0,
+                    "balance": "0",
+                    "amount": "0",
+                    "status": 1
+                },
+                {
+                    "id": 2,
+                    "created_at": 1724723900,
+                    "items": 0,
+                    "balance": "0",
+                    "amount": "0",
+                    "status": 1
+                },
+                
+            ]
+        }
+    }
+
+**Search Withdrawal List**
+  
+    POST /merchant/search-withdrawal-list/
+
+**parameters**
+
+• start_date  
+• end_date 
+• status 
+• transation_id
+
+**Returns**  
+
+    {
+        "error_code": 1,
+        "result": {
+            "withdrawallist": [
+                {
+                    "id": 1,
+                    "created_at": 1724723818,
+                    "items": 0,
+                    "balance": "0",
+                    "amount": "0",
+                    "status": 1
+                },
+                {
+                    "id": 2,
+                    "created_at": 1724723900,
+                    "items": 0,
+                    "balance": "0",
+                    "amount": "0",
+                    "status": 1
+                },
+                
+            ]
+        }
+    }
+
+**Search Withdrawal List**
+  
+    POST /merchant/get-founding-info/
+
+**parameters**
+
+• id
+
+**Returns**  
+
+    {
+        "error_code": 1,
+        "result": {
+            "foundinginfo": [
+                {
+                    "id": 1,
+                    "created_at": 1724723818,
+                    "items": 0,
+                    "balance": "0",
+                    "amount": "0",
+                    "aeviewed_at": 1724748660,
+                    "receive_address": "x022222222222222222212",
+                    "transaction_id": "",
+                    "status": 1,
+                    "description": "6666fff"
+                }
+            ]
+        }
+    }
