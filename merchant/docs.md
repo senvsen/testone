@@ -16,7 +16,7 @@
 
     POST /merchant/merchant-info/
     
-**Returns**
+**Returns**  
 
     {  
 
