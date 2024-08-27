@@ -15,7 +15,7 @@
         }
     }
 
-
+**merchant info**
     POST /merchant/merchant-info/
     
 **Returns**  
