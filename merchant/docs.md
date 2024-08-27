@@ -7,12 +7,14 @@
 • wallet_address - string: the address of BSC chain
   
 **Returns**  
+
     {
         "error_code": 1,
         "result": {
             "status": "ok"
         }
     }
+
 
     POST /merchant/merchant-info/
     
