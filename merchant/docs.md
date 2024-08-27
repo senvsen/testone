@@ -6,7 +6,7 @@
 **parameters**  
 • wallet_address - string: the address of BSC chain
   
-**Returns**
+**Returns**  
     {
         "error_code": 1,
         "result": {
