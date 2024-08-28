@@ -1,229 +1,430 @@
-**Merchant Login**
-
-    POST /merchant/login/
+# melosboom-backend
 
 
-**parameters**  
-• wallet_address - string: the address of BSC chain
-  
-**Returns**  
+#### Example
 
-    {
-        "error_code": 1,
-        "result": {
-            "status": "ok"
-        }
+TBD
+
+
+
+### Merchant Login
+
+```html
+POST /merchant/login/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "status": "ok"
     }
+}
+```
 
-**Merchant Info**  
 
-    POST /merchant/merchant-info/
+
+#### Example
+
+TBD
+
+### Merchant Info
+
+```html
+POST /merchant/merchant-info/
+```
+
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{  
+
+    "error_code": 1,  
     
-**Returns**  
-
-    {  
-
-        "error_code": 1,  
-        
-        "result": {  
-        
-            "total_performance": "0",  
-            "last_30days_new": "0",  
-            "super_node_vilad": null,  
-            "ofaddress": 0,  
-            "ofreward": "0",  
-            "usdt_reward": "0",  
-            "withdrawal_rewards": "0",  
-            
-        }
-    }  
-**Merchant List**  
-
-     POST /merchant/merchant-list/
-     
-**Returns**
-
-    {  
-
-        "error_code": 1,  
-        
-        "result": {  
-
-            "merchantlist": [  
-            
-                {  
-                    "ofaddress": 0,  
-                    "total_performance": "0",  
-                    "last_30days_new": "0",  
-                    "hashrate": "0"  
-                },  
-                
-            ],  
-        }
-    }  
-**Order List**  
+    "result": {  
     
-     POST /merchant/order-list/
-     
-**Returns**  
-    {  
-
-        "error_code": 1,  
+        "total_performance": "0",  
+        "last_30days_new": "0",  
+        "super_node_vilad": null,  
+        "ofaddress": 0,  
+        "ofreward": "0",  
+        "usdt_reward": "0",  
+        "withdrawal_rewards": "0",  
         
-        "result": {  
- 
-            "orderlist": [
-                {
-                    "order_id": 0,
-                    "items": "0",
-                    "amount": 0,
-                    "created_at": null
-                },
-            ]
-        }
-    }  
-
-**Merchant Register**
-
-    POST /merchant/register/
-
-**parameters**
-  
-• wallet_address - string: the address of BSC chain  
-• invite_code  
-• email  
-• first_name  
-• last_name  
-• selfintroduction  
-**Returns**  
-
-    {
-        "error_code": 1,
-        "result": {
-            "status": "ok"
-        }
     }
+} 
+```
 
-**Apply Withdrawal**
-  
-    POST /merchant/apply-withdrawal/
+#### Example
 
-**parameters**
+TBD
 
-  
-• my_address  
-• balance_usdt  
-• withdrawal_amount  
-• description  
+### Merchant List
 
-**Returns**  
+```html
+POST /merchant/merchant-list/
+```
 
-    {
-        "error_code": 1,
-        "result": {
-            "status": "ok"
-        }
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{  
+
+    "error_code": 1,  
+    
+    "result": {  
+
+        "merchantlist": [  
+        
+            {  
+                "ofaddress": 0,  
+                "total_performance": "0",  
+                "last_30days_new": "0",  
+                "hashrate": "0"  
+            },  
+            ...
+            
+        ],  
     }
+}  
+```
 
-**Withdrawal List**
-  
-    POST /merchant/get-withdrawal-list/
 
-**parameters**
+#### Example
+
+TBD
+
+### Order List
+
+```html
+POST /merchant/order-list/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{
+
+    "error_code": 1,  
+    
+    "result": {  
+
+        "orderlist": [
+            {
+                "order_id": 0,
+                "items": "0",
+                "amount": 0,
+                "created_at": null
+            },
+            ...
+        ]
+    }
+}  
+```
+
+#### Example
+
+TBD
+
+### Merchant Register
+
+```html
+POST /merchant/register/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+* invitor - string: the  invitor
+* email - string: the  email
+* first_name - string: first name
+* last_name - string: the  last name
+* selfintroduction - string: the  selfintroduction
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "status": "ok"
+    }
+}
+```
+#### Example
+
+TBD
+
+### Apply Withdrawal
+
+```html
+POST /merchant/apply-withdrawal/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+* balance_usdt - decimal: the value of available withdrawal rewards
+* withdrawal_amount - decimal: the value of withdrawal rewards
+* description - string: the  description
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "status": "ok"
+    }
+}
+```
+
+#### Example
+
+TBD
+
+### Apply Withdrawal
+
+```html
+POST /merchant/apply-withdrawal/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+* balance_usdt - decimal: the value of available withdrawal rewards
+* withdrawal_amount - decimal: the value of withdrawal rewards
+* description - string: the  description
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "status": "ok"
+    }
+}
+```
+
+#### Example
+
+TBD
+
+### Withdrawal List
+
+```html
+POST /merchant/get-withdrawal-list/
+```
+
+#### parameters
 
 Nothing
 
-**Returns**  
+#### Returns
 
-    {
-        "error_code": 1,
-        "result": {
-            "withdrawallist": [
-                {
-                    "id": 1,
-                    "created_at": 1724723818,
-                    "items": 0,
-                    "balance": "0",
-                    "amount": "0",
-                    "status": 1
-                },
-                {
-                    "id": 2,
-                    "created_at": 1724723900,
-                    "items": 0,
-                    "balance": "0",
-                    "amount": "0",
-                    "status": 1
-                },
-                
-            ]
-        }
+```json
+{
+    "error_code": 1,
+    "result": {
+        "withdrawallist": [
+            {
+                "id": 1,
+                "created_at": 1724723818,
+                "items": 0,
+                "balance": "0",
+                "amount": "0",
+                "status": 1
+            },
+            ...
+            
+        ]
     }
+}
+```
 
-**Search Withdrawal List**
-  
-    POST /merchant/search-withdrawal-list/
+#### Example
 
-**parameters**
+TBD
 
-• start_date  
-• end_date 
-• status 
-• transation_id
+### Founding Info
 
-**Returns**  
+```html
+POST /merchant/get-founding-info/
+```
 
-    {
-        "error_code": 1,
-        "result": {
-            "withdrawallist": [
-                {
-                    "id": 1,
-                    "created_at": 1724723818,
-                    "items": 0,
-                    "balance": "0",
-                    "amount": "0",
-                    "status": 1
-                },
-                {
-                    "id": 2,
-                    "created_at": 1724723900,
-                    "items": 0,
-                    "balance": "0",
-                    "amount": "0",
-                    "status": 1
-                },
-                
-            ]
-        }
+#### parameters
+
+*id - int: the  order id
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "id": 1,
+        "created_at": 1724723818,//the created timestamp
+        "token": "USDT",
+        "balance": "0",
+        "amount": "0",
+        "reviewed_at": 1724748660,//the reviewed timestamp
+        "receive_address": "",
+        "transaction_id": "",
+        "status": 1,
+        "description": ""
     }
+}
 
-**Search Withdrawal List**
-  
-    POST /merchant/get-founding-info/
+```
+#### Example
 
-**parameters**
+TBD
 
-• id
+### Merchant Info
 
-**Returns**  
+```html
+POST /merchant/get-merchant-info/
+```
 
-    {
-        "error_code": 1,
-        "result": {
-            "foundinginfo": [
-                {
-                    "id": 1,
-                    "created_at": 1724723818,
-                    "items": 0,
-                    "balance": "0",
-                    "amount": "0",
-                    "aeviewed_at": 1724748660,
-                    "receive_address": "x022222222222222222212",
-                    "transaction_id": "",
-                    "status": 1,
-                    "description": "6666fff"
-                }
-            ]
-        }
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "first_name": "",
+        "last_name": "",
+        "email": ""
     }
+}
+```
+#### Example
+
+TBD
+
+### Merchant Info
+
+```html
+POST /merchant/save-merchant-info/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "status": "ok"
+    }
+}
+```
+
+#### Example
+
+TBD
+
+### Merchant Manager Login
+
+```html
+POST /merchant/merchant-manager-login/
+```
+
+#### parameters
+
+* bsc_address - string: the  bsc address
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "status": "ok"
+    }
+}
+```
+
+
+#### Example
+
+TBD
+
+### Merchant Manager List
+
+```html
+POST /merchant/merchant-manager-list/
+```
+
+#### parameters
+
+* Nothing
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "bsc_address": "",
+        "first_name": "",
+        "last_name": "",
+        "email": ""
+    }
+}
+```
+#### Example
+
+TBD
+
+### Merchant Manager List
+
+```html
+POST /merchant/merchant-manager-list/
+```
+
+#### parameters
+
+* Nothing
+
+#### Returns
+
+```json
+{
+    "error_code": 1,
+    "result": {
+        "first_name": "",
+        "last_name": "",
+        "email": ""
+    }
+}
+
+```
+
